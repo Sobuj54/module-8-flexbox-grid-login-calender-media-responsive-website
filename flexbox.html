@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        /* flex is used to position items in horizontal style in a container */
+        display: flex;
+        justify-content: space-evenly;
+        height: 300px;
+        /* align items is used to position items vertically in a container */
+        align-items: center;
+        /* flex direction is used to set in which order the items will show(row or column) */
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        /* flex wrap wraps the whole content in the given area */
+      }
+      .box {
+        font-size: 2em;
+        font-weight: 700;
+        border: 3px dotted navy;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+    </div>
+  </body>
+</html>
