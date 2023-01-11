@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive website</title>
+    <style>
+      body {
+        max-width: 800px;
+        /* this margin auto will take the whole body in the center which will also be responsive*/
+        margin: 0 auto;
+        border: 1px solid black;
+      }
+      h1 {
+        /* this is relative unit which will make web responsive  */
+        font-size: 10vw;
+      }
+      .tiger img {
+        /* this width 100% means the picture will become fluid which means it will fit the screen anytime */
+        width: 100%;
+      }
+      .container-two {
+        display: flex;
+      }
+      .container-two .split {
+        width: 50%;
+      }
+      .split img {
+        width: 100%;
+      }
+      @media screen and (max-width: 576px) {
+        /* this will make contents along column */
+        .container-two {
+          /* flex-direction: column; */
+          flex-direction: column-reverse;
+          /* this will show images in reverse order when max width is 576px */
+        }
+        /* when the screen width is 576px the images will take 100% space */
+        .container-two .split {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>My responsive website</h1>
+    </section>
+    <section class="tiger">
+      <h3>Tiger</h3>
+      <img src="images/tiger.jpg" alt="" />
+    </section>
+    <section>
+      <h2>
+        Two parts
+      </h2>
+      <div class="container-two">
+        <div class="split">
+          <img src="images/food.jpg" alt="" />
+        </div>
+        <div class="split">
+          <img src="images/tiger.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- 
+        ways to make a website responsive
+        1. Viewport meta tag
+        2. CSS relative unit
+        3. Responsive Image (Fluid Image)
+        4.body max-width and margin auto.
+        5.responsive split screen using flex
+     -->
+  </body>
+</html>
